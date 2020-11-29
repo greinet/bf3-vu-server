@@ -55,6 +55,10 @@ WORKDIR /root/bf3
 RUN mkdir -p gamedata/bf3
 VOLUME /root/bf3/gamedata/bf3
 
+
+RUN mkdir -p /root/prefix32/drive_c/ProgramData/Electronic Arts/EA Services/License
+VOLUME /root/prefix32/drive_c/ProgramData/Electronic Arts/EA Services/License
+
 EXPOSE 8080
 EXPOSE 7948
 EXPOSE 25200
