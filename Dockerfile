@@ -52,8 +52,8 @@ RUN mkdir instance
 VOLUME /root/bf3/vu/instance
 
 WORKDIR /root/bf3
-RUN mkdir gamefiles
-VOLUME /root/bf3
+RUN mkdir -p gamedata/bf3
+VOLUME /root/bf3/gamedata/bf3
 
 EXPOSE 8080
 EXPOSE 7948
